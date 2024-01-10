@@ -1,0 +1,20 @@
+#posts {
+  display: block;
+  .post-container {
+    margin: 0 0 3rem;
+    width: 100%;
+    .tagline {
+      margin: 0.5rem 0;
+    }
+    .post-image {
+      max-width: 100%;
+      height: auto;
+      margin: 1rem 0;
+    }
+
+  }
+}
+
+#post {
+
+}

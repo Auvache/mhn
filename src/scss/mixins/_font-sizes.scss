@@ -1,0 +1,128 @@
+//
+// FONT SIZING
+//
+// _font-sizes.scss
+
+/* Headers and paragraph */
+@mixin font-prop($point) {
+  color: $mhn-text;
+  font-family: $font-family-base;
+  font-weight: $font-weight-normal;
+  margin: 0;
+
+  @if $point == h1 {
+    font-size: 40px;
+    font-weight: $font-weight-semibold;
+    line-height: 48px;
+    margin-bottom: 0.5rem;
+
+    @include breakpoint(sm) {
+      font-size: fluidProp(40px, 72px);
+      line-height: fluidProp(56px, 88px);
+    }
+  }
+
+  @if $point == h2 {
+    font-size: 32px;
+    font-weight: $font-weight-medium;
+    line-height: 40px;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0;
+
+    @include breakpoint(sm) {
+      font-size: fluidProp(32px, 48px);
+      line-height: fluidProp(40px, 64px);
+    }
+  }
+
+  @if $point == h3 {
+    font-size: 24px;
+    font-weight: $font-weight-medium;
+    line-height: 32px;
+    margin-bottom: 0.5rem;
+
+    @include breakpoint(sm) {
+      font-size: fluidProp(24px, 40px);
+      line-height: fluidProp(32px, 56px);
+    }
+  }
+
+  @if $point == h4 {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 0.5rem;
+
+    @include breakpoint(sm) {
+      font-size: fluidProp(24px, 32px);
+      line-height: fluidProp(32px, 40px);
+    }
+  }
+
+  @if $point == h5 {
+    font-size: 22px;
+    font-weight: $font-weight-slightlybold;
+    line-height: 30px;
+    margin-bottom: 0.5rem;
+
+    @include breakpoint(sm) {
+      font-size: fluidProp(22px, 24px);
+      line-height: fluidProp(30px, 32px);
+    }
+  }
+
+  @if $point == p {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 1rem;
+
+    @include breakpoint(sm) {
+      font-size: fluidProp(18px, 18px);
+      line-height: fluidProp(26px, 26px);
+    }
+  }
+
+  @if $point == tagline {
+    font-size: 14px;
+    line-height: 18px;
+
+    @include breakpoint(sm) {
+      font-size: fluidProp(14px, 14px);
+      line-height: fluidProp(18px, 18px);
+    }
+  }
+
+  @if $point == a {
+    font-size: 18px;
+    color: $mhn-link;
+
+    @include breakpoint(sm) {
+      font-size: fluidProp(18px, 18px);
+      line-height: fluidProp(26px, 26px);
+    }
+  }
+
+  @if $point == li {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 0;
+
+    @include breakpoint(sm) {
+      font-size: fluidProp(18px, 18px);
+      line-height: fluidProp(26px, 26px);
+    }
+  }
+
+  @if $point == table-title {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 0;
+    font-weight: bold;
+
+    @include breakpoint(md) {
+      font-weight: normal;
+      margin-bottom: 1rem;
+      font-size: fluidProp(22px, 24px);
+      line-height: fluidProp(30px, 32px);
+    }
+  }
+}
