@@ -34,7 +34,4 @@ onMounted(async () => {
   post.value = await getPost(props.slug)
   isLoaded.value = true
 })
-
-
-
 </script>
