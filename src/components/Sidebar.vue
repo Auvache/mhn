@@ -1,8 +1,8 @@
 <template>
   <section id="sidebar">
     <div class="sidebar-content">
-      <img class="sidebar-bio-pic mb-3" src="@/assets/img/cpap-9.jpeg" alt="">
-      <p class="tagline mb-3">Hi, I'm Kajsa! Let's talk about mental health with smiles, not tears :)</p>
+      <img class="sidebar-bio-pic mb-3" src="@/assets/img/about-me.png" alt="">
+      <p class="tagline mb-3">Managing Mental Health and Sleep Apnea with smiles, not tears.</p>
       <ul class="list-unstyled">
         <li><router-link to="/">Learn about my story</router-link></li>
         <li><router-link to="/">Should you get a sleep study?</router-link></li>

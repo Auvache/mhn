@@ -157,6 +157,29 @@ const routes = [
     },
   },
   {
+    path: '/product-articles',
+    name: 'ProductArticles',
+    component: () => import('../views/ProductArticles'),
+    meta: {
+      title: 'All Products for Mental Health Naps',
+      canonical: 'https://www.mentalhealthnaps.com/product-articles',
+      metaTags: [
+        {
+          name: 'description',
+          content: ''
+        },
+        {
+          name: 'keywords',
+          content: ''
+        },
+        {
+          name: 'robots',
+          content: 'index, follow'
+        }
+      ]
+    },
+  },
+  {
     path: '/sleep-scape',
     name: 'SleepScape',
     component: () => import('../views/SleepScape'),

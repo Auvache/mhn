@@ -1,37 +1,39 @@
 <template>
-  <section class="pt-5">
+  <section class="pt-3 pt-lg-5">
     <div class="container large-content">
       <div class="row">
-        <div class="card-box d-flex flex-column flex-md-row align-items-center justify-content-center flex-wrap">
+        <div class="card-box d-flex flex-row align-items-baseline justify-content-center flex-wrap">
 
-          <router-link to="/my-story" class="text-center">
-            <div class="image-card">
-              <img src="@/assets/img/cpap-9.jpeg" alt="">
-              <p>My Story</p>
-            </div>
-          </router-link>
+          <div class="d-flex justify-content-around">
+            <router-link to="/my-story" class="text-center">
+              <div class="image-card">
+                <img src="@/assets/img/my-story.png" alt="">
+                <p>My Story</p>
+              </div>
+            </router-link>
 
-          <router-link to="/understanding-sleep-apnea" class="text-center">
-            <div class="image-card">
-              <img src="@/assets/img/cpap-9.jpeg" alt="">
-              <p>Understanding Sleep Apnea</p>
-            </div>
-          </router-link>
+            <router-link to="/understanding-sleep-apnea" class="text-center">
+              <div class="image-card">
+                <img src="@/assets/img/sleep-apnea.png" alt="">
+                <p>Sleep Apnea</p>
+              </div>
+            </router-link>
+          </div>
+          <div class="d-flex justify-content-around">
+            <router-link to="/sleep-scape" class="text-center">
+              <div class="image-card">
+                <img src="@/assets/img/sleep-scape.png" alt="">
+                <p>Sleep Scape</p>
+              </div>
+            </router-link>
 
-          <router-link to="/sleep-scape" class="text-center">
-            <div class="image-card">
-              <img src="@/assets/img/cpap-9.jpeg" alt="">
-              <p>My Sleep Scape</p>
-            </div>
-          </router-link>
-
-          <router-link to="/sleep-study" class="text-center">
-            <div class="image-card">
-              <img src="@/assets/img/cpap-9.jpeg" alt="">
-              <p>Sleep Studies</p>
-            </div>
-          </router-link>
-
+            <router-link to="/sleep-study" class="text-center">
+              <div class="image-card">
+                <img src="@/assets/img/sleep-study.png" alt="">
+                <p>Sleep Studies</p>
+              </div>
+            </router-link>
+          </div>
         </div>
       </div>
     </div>
@@ -82,18 +84,5 @@ const goToPost = (slug) => {
 </script>
 
 <style lang="scss" scoped>
-.image-card {
-  text-align: center;
-  transition: all 500ms;
-  margin: 1rem;
 
-  &:hover {
-    transform: scale(1.1);
-  }
-  img {
-    max-width: 200px;
-    border: 1px solid transparent;
-    border-radius: 12px;
-  }
-}
 </style>

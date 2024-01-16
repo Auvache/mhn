@@ -23,6 +23,10 @@
 
   .logo-container {
     display: inline-block;
+
+    img {
+      width: 60px;
+    }
   }
 
   a {

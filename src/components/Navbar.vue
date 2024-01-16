@@ -7,15 +7,31 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li v-if="route.path !== '/'" class="nav-item">
+            <router-link class="nav-link" to="/" role="button">
+              Home
+            </router-link>
+          </li>
           <li class="nav-item dropdown">
             <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Sleep Apnea
+              Articles
             </a>
             <ul class="dropdown-menu">
+              <li><router-link class="dropdown-item" to="/understanding-sleep-apnea">Understanding Sleep Apnea</router-link></li>
               <li><router-link class="dropdown-item" to="/sleep-study">Sleep Study</router-link></li>
               <li><router-link class="dropdown-item" to="/sleep-scape">Sleep Scape</router-link></li>
+              <li><router-link class="dropdown-item" to="/all-posts">All Articles and Blog Posts</router-link></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu">
+              <li><router-link class="dropdown-item" to="/">Product Post 1</router-link></li>
+              <li><router-link class="dropdown-item" to="/">Product Post 2</router-link></li>
               <li><hr class="dropdown-divider"></li>
-              <li><router-link class="dropdown-item" to="/understanding-sleep-apnea">Understanding Sleep Apnea</router-link></li>
+              <li><router-link class="dropdown-item" to="/product-articles">All Product Posts</router-link></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -40,24 +56,48 @@
               <li><router-link class="dropdown-item" to="/vision">The Mental Health Naps Vision</router-link></li>
             </ul>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Articles
-            </a>
-            <ul class="dropdown-menu">
-              <li><router-link class="dropdown-item" to="/">Affiliate Link 1</router-link></li>
-              <li><router-link class="dropdown-item" to="/">Affiliate Link 2</router-link></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><router-link class="dropdown-item" to="/all-posts">All Blog Posts</router-link></li>
-            </ul>
-          </li>
         </ul>
       </div>
     </div>
   </nav>
 </template>
 <script setup>
+import {useRoute} from "vue-router";
+
+const route = useRoute()
 </script>
 <style lang="scss" scoped>
+nav {
+  z-index: 1000;
+  background-color: $mhn-green;
+  width: 100%;
+  top: 0;
 
+  .navbar-brand:hover,
+  .navbar-brand:focus
+  {
+    color: $white;
+  }
+
+  .nav-link {
+    color: $white;
+    font-weight: $font-weight-thin;
+
+    &:active,
+    &:focus,
+    &:visited,
+    &.show
+    {
+      color: $white;
+    }
+  }
+
+  .dropdown-menu {
+    right: 0;
+    left: inherit;
+  }
+}
+.navbar-logo {
+  width: 60px;
+}
 </style>

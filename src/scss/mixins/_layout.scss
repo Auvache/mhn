@@ -83,14 +83,46 @@ section {
 }
 
 .card-box {
-  border-bottom: 1px solid black;
-  padding-bottom: 2rem;
+  border-bottom: 0.5px solid $gray-chateau;
+  padding: 0 0 2rem;
   margin-bottom: 2rem;
 
   @include breakpoint(md) {
     border-bottom: none;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
+  }
+
+  .image-card {
+    text-align: center;
+    transition: all 500ms;
+    margin: 0.25rem;
+
+    @include breakpoint(sm) {
+      margin: 1rem;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+    img {
+      max-width: 120px;
+      border: 1px solid transparent;
+      border-radius: 12px;
+
+      @include breakpoint(xs) {
+        max-width: 160px;
+      }
+      @include breakpoint(sm) {
+        max-width: 180px;
+      }
+      @include breakpoint(md) {
+        max-width: 120px;
+      }
+      @include breakpoint(lg) {
+        max-width: 180px;
+      }
+    }
   }
 }
 
@@ -99,34 +131,3 @@ section {
   height: 72px;
 }
 
-nav {
-  z-index: 1000;
-  background-color: $mhn-green;
-  width: 100%;
-  top: 0;
-
-  .navbar-brand:hover {
-    color: $white;
-  }
-
-  .nav-link {
-    color: $white;
-    font-weight: $font-weight-thin;
-
-    &:active,
-    &:focus,
-    &:visited,
-    &.show
-    {
-      color: $white;
-    }
-  }
-
-  .dropdown-menu {
-    right: 0;
-    left: inherit;
-  }
-}
-.navbar-logo {
-  width: 60px;
-}

@@ -5,14 +5,15 @@
         <div class="d-flex">
           <Sidebar />
           <div>
-            <h1>Follow Mental Health Naps!</h1>
-            <p>I hope that through reading the blog you can find some comfort and giggles while reading about my journey with handing mental illness as I have been riding the dragon for a few years.</p>
-            <p>If you like what you are reading, I invite you to check out my YouTube page as well as I add my own voice in talking about my story. Click the link below to give my YouTube Channel for Mental Health Naps a watch! Also if you are interested you can follow my Instagram, TikTok, and Facebook Page for further content and conversation! Check out the links below!</p>
+            <h1>Follow Mental Health Naps</h1>
+            <p>I hope that you have found helpful information, comfort, and giggles while reading my journey living with severe sleep apnea and managing my mental health with a CPAP. But, did you know Mental Health Naps is more than a blog?  </p>
+            <p>You can find additional video and visual content on TikTok, Instagram, Facebook, and YouTube. Though I only post a blog once a week, I post on those social media platforms Monday thru Friday. I encourage you to follow me there for more daily Sleep Apnea and Mental Health content.</p>
+            <p>Use the links below to find me: </p>
             <p>Instagram | <a href="https://www.instagram.com/mental_health_naps_/">@mental_health_naps_</a></p>
             <p>YouTube | <a href="https://www.youtube.com/channel/UCgjWiBrQvqILIc_E4GzLECQ">Mental Health Naps</a></p>
             <p>TikTok | <a href="https://www.tiktok.com/@mental_health_naps_?lang=en&is_copy_url=1&is_from_webapp=v1">mental_health_naps_</a></p>
             <p>Facebook | <a href="https://www.facebook.com/KajMHnaps">Mental Health Naps</a></p>
-            <p>Thanks and have a nice nap!</p>
+            <p>Thank you so much for following and supporting my accounts!</p>
           </div>
         </div>
       </div>
