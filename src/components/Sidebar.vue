@@ -2,12 +2,11 @@
   <section id="sidebar">
     <div class="sidebar-content">
       <img class="sidebar-bio-pic mb-3" src="@/assets/img/about-me.png" alt="">
-      <p class="tagline mb-3">Managing Mental Health and Sleep Apnea with smiles, not tears.</p>
-      <ul class="list-unstyled">
-        <li><router-link to="/">Learn about my story</router-link></li>
-        <li><router-link to="/">Should you get a sleep study?</router-link></li>
-        <li><router-link to="/">How do I sleep at night (and at nap time)?</router-link></li>
-        <li><router-link to="/">Understanding sleep apnea</router-link></li>
+      <p class="text-center">Managing Mental Health and Sleep Apnea with smiles, not tears.</p>
+      <hr>
+      <ul class="list-unstyled text-center">
+        <li><router-link to="/product-articles">See all posts about specific products</router-link></li>
+        <li><router-link to="/all-posts">See all articles</router-link></li>
       </ul>
     </div>
   </section>
@@ -21,15 +20,26 @@
     display: none;
     padding: 0.25rem 2rem 0 0;
     margin: 0 2rem 0 0;
-    border-right: 0.5px solid $gray-chateau;
+    border-right: 1px solid $gray-chateau;
     height: 600px;
     max-height: 90%;
     width: 225px;
     position: sticky;
     top: 126px;
 
-    li a {
+    p {
       font-size: 16px;
+      line-height: 26px;
+    }
+
+    ul li {
+      margin-bottom: 1rem;
+      line-height: 20px;
+
+      a {
+        font-size: 16px;
+        line-height: 20px;
+      }
     }
 
     @include breakpoint(md) {
@@ -41,8 +51,11 @@
       border: 1px solid transparent;
       border-radius: 50%;
     }
-  }
 
+    hr {
+      border-top: 1px solid $gray-chateau;
+    }
+  }
 
 }
 </style>

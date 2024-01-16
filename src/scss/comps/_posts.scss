@@ -8,8 +8,16 @@
     }
     .post-image {
       max-width: 100%;
+      border: 1px solid transparent;
+      border-radius: 8px;
       height: auto;
       margin: 1rem 0;
+      opacity: 1;
+      transition: all 500ms;
+
+      &:hover {
+        opacity: 0.8;
+      }
     }
 
   }

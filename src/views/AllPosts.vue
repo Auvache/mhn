@@ -6,6 +6,21 @@
           <Sidebar />
           <div>
             <h1>All Posts</h1>
+            <h2 class="tp">Product Articles</h2>
+            <ul>
+              <li><router-link to="/">link 1</router-link></li>
+              <li><router-link to="/">link 1</router-link></li>
+            </ul>
+            <h2 class="tp">Story Articles</h2>
+            <ul>
+              <li><router-link to="/">link 1</router-link></li>
+              <li><router-link to="/">link 1</router-link></li>
+            </ul>
+            <h2 class="tp">Blog Posts</h2>
+            <ul>
+              <li><router-link to="/">link 1</router-link></li>
+              <li><router-link to="/">link 1</router-link></li>
+            </ul>
           </div>
         </div>
       </div>

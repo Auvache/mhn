@@ -103,12 +103,13 @@ section {
     }
 
     &:hover {
-      transform: scale(1.1);
+      transform: scale(1.05);
+      opacity: 0.9;
     }
     img {
       max-width: 120px;
       border: 1px solid transparent;
-      border-radius: 12px;
+      border-radius: 8px;
 
       @include breakpoint(xs) {
         max-width: 160px;

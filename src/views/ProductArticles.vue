@@ -4,9 +4,12 @@
       <div class="row">
         <div class="d-flex">
           <Sidebar />
-          <div id="post" v-if="isLoaded">
-
-            <router-link to="/">Back to Home</router-link>
+          <div>
+            <h1>All Product Articles</h1>
+            <ul>
+              <li><router-link to="/">link 1</router-link></li>
+              <li><router-link to="/">link 1</router-link></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -17,16 +20,4 @@
 
 <script setup>
 import Sidebar from '@/components/Sidebar.vue'
-import getPost from "@/functions/getPost";
-import {onMounted, ref} from "vue";
-
-const post = ref()
-const isLoaded = ref(false)
-// onMounted(async () => {
-//   post.value = await getPost(props.slug)
-//   isLoaded.value = true
-// })
-
-
-
 </script>

@@ -5,7 +5,7 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div v-if="route.path !== '/links'" class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li v-if="route.path !== '/'" class="nav-item">
             <router-link class="nav-link" to="/" role="button">
@@ -39,10 +39,10 @@
               Socials
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">TikTok</a></li>
-              <li><a class="dropdown-item" href="#">Instagram</a></li>
-              <li><a class="dropdown-item" href="#">YouTube</a></li>
-              <li><a class="dropdown-item" href="#">Facebook</a></li>
+              <li><a class="dropdown-item" href="https://www.tiktok.com/@mental_health_naps_?lang=en&is_copy_url=1&is_from_webapp=v1" target="_blank">TikTok</a></li>
+              <li><a class="dropdown-item" href="https://www.instagram.com/mental_health_naps_/" target="_blank">Instagram</a></li>
+              <li><a class="dropdown-item" href="https://www.youtube.com/channel/UCgjWiBrQvqILIc_E4GzLECQ" target="_blank">YouTube</a></li>
+              <li><a class="dropdown-item" href="https://www.facebook.com/KajMHnaps" target="_blank">Facebook</a></li>
               <li><router-link class="dropdown-item" to="/socials">All Socials</router-link></li>
             </ul>
           </li>
