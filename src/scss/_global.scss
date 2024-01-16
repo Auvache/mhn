@@ -80,16 +80,22 @@ h6, .t6{ @include font-prop(h6); }
 
 p, .tp { @include font-prop(p); }
 .tp2 { @include font-prop(p2); }
-a, .ta { @include font-prop(p2); @include font-prop(a); }
+a, .ta {
+  @include font-prop(p2); @include font-prop(a);
+  text-decoration: none;
+}
 p a { @include  font-prop(p); @include font-prop(a);}
 .tagline { @include  font-prop(tagline); }
 li { @include font-prop(li); }
 .logo-font {
-  font-size: 40px;
-  font-weight: 300;
-  line-height: 48px;
+  font-size: 32px;
+  font-weight: 200;
+  line-height: 40px;
 }
-
+.dropdown-item {
+  font-weight: 200;
+  font-size: 16px;
+}
 a, img {
   border:none;
   outline:none;
@@ -117,6 +123,10 @@ b, strong {
 
 .blue {
   color: $mhn-link;
+}
+
+.white {
+  color: $white;
 }
 
 .content { @include contentWidth(div); }

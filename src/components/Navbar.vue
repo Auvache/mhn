@@ -1,7 +1,7 @@
 <template>
-  <nav class="navbar navbar-expand-lg border-bottom pt-2 pb-2 position-fixed">
+  <nav class="navbar navbar-expand-lg py-0 position-fixed">
     <div class="container-fluid large-content">
-      <router-link class="navbar-brand d-flex align-items-center logo-font" to="/"><img class="navbar-logo" src="@/assets/img/logos/logo-green.svg" alt=""><span class="d-md-none">MHN</span><span class="d-none d-md-inline">Mental Health Naps</span></router-link>
+      <router-link class="navbar-brand d-flex align-items-center logo-font white" to="/"><img class="navbar-logo" src="@/assets/img/logos/logo-green.svg" alt=""><span class="d-md-none">MHN</span><span class="d-none d-md-inline">Mental Health Naps</span></router-link>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -59,19 +59,5 @@
 <script setup>
 </script>
 <style lang="scss" scoped>
-nav {
-  z-index: 1000;
-  background-color: #ffffff;
-  width: 100%;
-  top: 0;
 
-  .dropdown-menu {
-    right: 0;
-    left: inherit;
-  }
-}
-.navbar-logo {
-  width: 50px;
-  margin-right: 10px;
-}
 </style>

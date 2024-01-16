@@ -117,9 +117,37 @@ section {
 
 .navbar-buffer {
   background-color: transparent;
-  height: 80px;
+  height: 72px;
 }
 
-.hero-boxes {
+nav {
+  z-index: 1000;
+  background-color: $mhn-green;
+  width: 100%;
+  top: 0;
 
+  .navbar-brand:hover {
+    color: $white;
+  }
+
+  .nav-link {
+    color: $white;
+    font-weight: $font-weight-thin;
+
+    &:active,
+    &:focus,
+    &:visited,
+    &.show
+    {
+      color: $white;
+    }
+  }
+
+  .dropdown-menu {
+    right: 0;
+    left: inherit;
+  }
+}
+.navbar-logo {
+  width: 60px;
 }
