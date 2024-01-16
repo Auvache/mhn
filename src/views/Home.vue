@@ -2,27 +2,36 @@
   <section class="pt-5">
     <div class="container large-content">
       <div class="row">
-        <div class="card-box d-flex flex-column flex-md-row align-items-center justify-content-center">
-          <router-link to="/" class="card square">
-            <div class="card-body">
-              one
+        <div class="card-box d-flex flex-column flex-md-row align-items-center justify-content-center flex-wrap">
+
+          <router-link to="/my-story" class="text-center">
+            <div class="image-card">
+              <img src="@/assets/img/cpap-9.jpeg" alt="">
+              <p>My Story</p>
             </div>
           </router-link>
-          <router-link to="/" class="card square">
-            <div class="card-body">
-              two
+
+          <router-link to="/understanding-sleep-apnea" class="text-center">
+            <div class="image-card">
+              <img src="@/assets/img/cpap-9.jpeg" alt="">
+              <p>Understanding Sleep Apnea</p>
             </div>
           </router-link>
-          <router-link to="/" class="card square">
-            <div class="card-body">
-              three
+
+          <router-link to="/sleep-scape" class="text-center">
+            <div class="image-card">
+              <img src="@/assets/img/cpap-9.jpeg" alt="">
+              <p>My Sleep Scape</p>
             </div>
           </router-link>
-          <router-link to="/" class="card square">
-            <div class="card-body">
-              four
+
+          <router-link to="/sleep-study" class="text-center">
+            <div class="image-card">
+              <img src="@/assets/img/cpap-9.jpeg" alt="">
+              <p>Sleep Studies</p>
             </div>
           </router-link>
+
         </div>
       </div>
     </div>
@@ -73,5 +82,18 @@ const goToPost = (slug) => {
 </script>
 
 <style lang="scss" scoped>
+.image-card {
+  text-align: center;
+  transition: all 500ms;
+  margin: 1rem;
 
+  &:hover {
+    transform: scale(1.1);
+  }
+  img {
+    max-width: 200px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+  }
+}
 </style>
