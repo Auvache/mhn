@@ -1,5 +1,5 @@
 <template>
-  <section class="pt-3 pt-lg-5">
+  <section class="pt-3 pt-lg-5 fade-in">
     <div class="container large-content">
       <div class="row">
         <div class="card-box d-flex flex-row align-items-baseline justify-content-center flex-wrap">
@@ -38,7 +38,7 @@
       </div>
     </div>
   </section>
-  <section>
+  <section class="fade-in-up">
     <div class="container medium-content">
       <div class="row">
         <div class="d-flex">

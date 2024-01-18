@@ -5,7 +5,10 @@
       <p class="text-center">Managing Mental Health and Sleep Apnea with smiles, not tears.</p>
       <hr>
       <ul class="list-unstyled text-center">
-        <li><router-link to="/product-articles">See all posts about specific products</router-link></li>
+        <li><router-link to="/products/cpap-filters">CPAP Filters</router-link></li>
+        <li><router-link to="/products/cpap-rainout">CPAP Rainout</router-link></li>
+        <li><router-link to="/products/cpap-wipes">CPAP Wipes</router-link></li>
+        <li><router-link to="/products/resmed">ResMed Airfit F30i</router-link></li>
         <li><router-link to="/all-posts">See all articles</router-link></li>
       </ul>
     </div>

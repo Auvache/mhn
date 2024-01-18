@@ -180,6 +180,98 @@ const routes = [
     },
   },
   {
+    path: '/products/cpap-filters',
+    name: 'CPAPFilters',
+    component: () => import('../views/products/CPAPFilters'),
+    meta: {
+      title: 'All Products for Mental Health Naps',
+      canonical: 'https://www.mentalhealthnaps.com/products/cpap-filters',
+      metaTags: [
+        {
+          name: 'description',
+          content: ''
+        },
+        {
+          name: 'keywords',
+          content: ''
+        },
+        {
+          name: 'robots',
+          content: 'index, follow'
+        }
+      ]
+    },
+  },
+  {
+    path: '/products/cpap-rainout',
+    name: 'CPAPRainout',
+    component: () => import('../views/products/CPAPRainout'),
+    meta: {
+      title: 'All Products for Mental Health Naps',
+      canonical: 'https://www.mentalhealthnaps.com/products/cpap-rainout',
+      metaTags: [
+        {
+          name: 'description',
+          content: ''
+        },
+        {
+          name: 'keywords',
+          content: ''
+        },
+        {
+          name: 'robots',
+          content: 'index, follow'
+        }
+      ]
+    },
+  },
+  {
+    path: '/products/cpap-wipes',
+    name: 'CPAPWipes',
+    component: () => import('../views/products/CPAPWipes'),
+    meta: {
+      title: 'All Products for Mental Health Naps',
+      canonical: 'https://www.mentalhealthnaps.com/products/cpap-wipes',
+      metaTags: [
+        {
+          name: 'description',
+          content: ''
+        },
+        {
+          name: 'keywords',
+          content: ''
+        },
+        {
+          name: 'robots',
+          content: 'index, follow'
+        }
+      ]
+    },
+  },
+  {
+    path: '/products/resmed',
+    name: 'ResMed',
+    component: () => import('../views/products/ResMed'),
+    meta: {
+      title: 'All Products for Mental Health Naps',
+      canonical: 'https://www.mentalhealthnaps.com/products/resmed',
+      metaTags: [
+        {
+          name: 'description',
+          content: ''
+        },
+        {
+          name: 'keywords',
+          content: ''
+        },
+        {
+          name: 'robots',
+          content: 'index, follow'
+        }
+      ]
+    },
+  },
+  {
     path: '/sleep-scape',
     name: 'SleepScape',
     component: () => import('../views/SleepScape'),

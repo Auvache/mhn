@@ -11,62 +11,63 @@
   margin: 0;
 
   @if $point == h1 {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: $font-weight-normal;
-    line-height: 40px;
+    line-height: 38px;
     margin-bottom: 1rem;
     padding-bottom: 0;
 
     @include breakpoint(sm) {
-      font-size: fluidProp(32px, 48px);
-      line-height: fluidProp(40px, 64px);
+      font-size: fluidProp(28px, 38px);
+      line-height: fluidProp(38px, 52px);
     }
   }
 
   @if $point == h2 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: $font-weight-normal;
-    line-height: 32px;
-    margin-bottom: 0.5rem;
+    line-height: 30px;
+    margin: 3rem 0 0.5rem;
 
     @include breakpoint(sm) {
-      font-size: fluidProp(24px, 40px);
-      line-height: fluidProp(32px, 56px);
+      font-size: fluidProp(20px, 28px);
+      line-height: fluidProp(30px, 38px);
     }
   }
 
   @if $point == h3 {
-    font-size: 22px;
-    line-height: 30px;
-    margin-bottom: 0.5rem;
+    font-size: 16px;
+    font-weight: $font-weight-bold;
+    line-height: 26px;
+    margin: 1.5rem 0 0.5rem;
 
     @include breakpoint(sm) {
-      font-size: fluidProp(24px, 32px);
-      line-height: fluidProp(32px, 40px);
+      font-size: fluidProp(16px, 18px);
+      line-height: fluidProp(26px, 28px);
     }
   }
 
   @if $point == h4 {
-    font-size: 22px;
-    font-weight: $font-weight-bold;
-    line-height: 30px;
-    margin-bottom: 0.5rem;
+    font-size: 16px;
+    font-weight: $font-weight-light;
+    line-height: 26px;
+    margin: 1rem 0 0.5rem;
 
     @include breakpoint(sm) {
-      font-size: fluidProp(22px, 24px);
-      line-height: fluidProp(30px, 32px);
+      font-size: fluidProp(16px, 18px);
+      line-height: fluidProp(26px, 28px);
     }
   }
 
   @if $point == h5 {
-    font-size: 18px;
-    font-weight: $font-weight-bold;
-    line-height: 18px;
-    margin-bottom: 0.5rem;
+    font-size: 16px;
+    font-weight: $font-weight-light;
+    line-height: 26px;
+    margin: 1rem 0 0.5rem;
 
     @include breakpoint(sm) {
-      font-size: fluidProp(22px, 24px);
-      line-height: fluidProp(30px, 32px);
+      font-size: fluidProp(16px, 18px);
+      line-height: fluidProp(26px, 28px);
     }
   }
 

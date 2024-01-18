@@ -1,0 +1,50 @@
+.fade-in {
+    animation: fadeIn 2000ms;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-in-up {
+    position: relative;
+    animation: fadeInUp 1000ms;
+}
+@keyframes fadeInUp {
+    0% {
+        top: 300px;
+        opacity: 0;
+    }
+    30% {
+        opacity: 0;
+    }
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+
+.fade-in-down {
+    animation: fadeInDown 1000ms;
+}
+@keyframes fadeInDown {
+    0% {
+        top: -300px;
+        opacity: 0;
+    }
+    30% {
+        opacity: 0;
+    }
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}

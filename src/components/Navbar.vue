@@ -28,10 +28,12 @@
               Products
             </a>
             <ul class="dropdown-menu">
-              <li><router-link class="dropdown-item" to="/">Product Post 1</router-link></li>
-              <li><router-link class="dropdown-item" to="/">Product Post 2</router-link></li>
+              <li><router-link class="dropdown-item" to="/products/cpap-filters">CPAP Filters</router-link></li>
+              <li><router-link class="dropdown-item" to="/products/cpap-rainout">CPAP Rainout</router-link></li>
+              <li><router-link class="dropdown-item" to="/products/cpap-wipes">CPAP Wipes</router-link></li>
+              <li><router-link class="dropdown-item" to="/products/resmed">ResMed Airfit F30i</router-link></li>
               <li><hr class="dropdown-divider"></li>
-              <li><router-link class="dropdown-item" to="/product-articles">All Product Posts</router-link></li>
+              <li><router-link class="dropdown-item" to="/all-posts">All Product Posts</router-link></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
