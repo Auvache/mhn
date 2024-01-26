@@ -1,6 +1,9 @@
 <template>
   <section class="pt-3 pt-lg-5 fade-in">
     <div class="container large-content">
+      <div class=" d-none d-md-block row text-center medium-content my-5">
+        <h1>Hello! Here we manage Mental Health and Sleep Apnea with smiles, not tears.</h1>
+      </div>
       <div class="row">
         <div class="card-box d-flex flex-row align-items-baseline justify-content-center flex-wrap">
 
@@ -8,14 +11,14 @@
             <router-link to="/my-story" class="text-center">
               <div class="image-card">
                 <img src="@/assets/img/my-story.png" alt="">
-                <p>My Story</p>
+                <p>My Sleep<br> Apnea Story</p>
               </div>
             </router-link>
 
             <router-link to="/understanding-sleep-apnea" class="text-center">
               <div class="image-card">
                 <img src="@/assets/img/sleep-apnea.png" alt="">
-                <p>Sleep Apnea</p>
+                <p>Understanding<br> Sleep Apnea</p>
               </div>
             </router-link>
           </div>
@@ -23,14 +26,14 @@
             <router-link to="/sleep-scape" class="text-center">
               <div class="image-card">
                 <img src="@/assets/img/sleep-scape.png" alt="">
-                <p>Sleep Scape</p>
+                <p>My Sleep Scape &<br> Sleep Hygiene</p>
               </div>
             </router-link>
 
             <router-link to="/sleep-study" class="text-center">
               <div class="image-card">
                 <img src="@/assets/img/sleep-study.png" alt="">
-                <p>Sleep Studies</p>
+                <p>All About<br> Sleep Studies</p>
               </div>
             </router-link>
           </div>
@@ -73,8 +76,8 @@ onMounted(async () => {
 
 const goToPost = (slug) => {
   router.push({
-    name: 'Posts',
-    path: '/posts/' + slug,
+    name: 'Post',
+    path: '/post/' + slug,
     params: {
       slug: slug,
     }
@@ -82,7 +85,3 @@ const goToPost = (slug) => {
 }
 
 </script>
-
-<style lang="scss" scoped>
-
-</style>

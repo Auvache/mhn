@@ -55,8 +55,8 @@ onMounted(async () => {
 
 const goToPost = (slug) => {
   router.push({
-    name: 'Posts',
-    path: '/posts/' + slug,
+    name: 'Post',
+    path: '/post/' + slug,
     params: {
       slug: slug,
     }

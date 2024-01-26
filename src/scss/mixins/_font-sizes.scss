@@ -78,8 +78,8 @@
     margin-bottom: 1rem;
 
     @include breakpoint(sm) {
-      font-size: fluidProp(16px, 18px);
-      line-height: fluidProp(26px, 28px);
+      font-size: 16px;
+      line-height: 26px;
     }
   }
 

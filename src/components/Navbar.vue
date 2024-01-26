@@ -17,10 +17,10 @@
               Articles
             </a>
             <ul class="dropdown-menu">
-              <li><router-link class="dropdown-item" to="/understanding-sleep-apnea">Understanding Sleep Apnea</router-link></li>
-              <li><router-link class="dropdown-item" to="/sleep-study">Sleep Study</router-link></li>
-              <li><router-link class="dropdown-item" to="/sleep-scape">Sleep Scape</router-link></li>
-              <li><router-link class="dropdown-item" to="/all-posts">All Articles and Blog Posts</router-link></li>
+              <li><router-link class="dropdown-item" to="/articles">Mental Health Naps Articles</router-link></li>
+              <li><router-link class="dropdown-item" to="/products">Product Articles</router-link></li>
+              <li><router-link class="dropdown-item" to="/posts">Weekly Blog Posts</router-link></li>
+              <li><router-link class="dropdown-item" to="/all-posts">Archive</router-link></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -33,7 +33,7 @@
               <li><router-link class="dropdown-item" to="/products/cpap-wipes">CPAP Wipes</router-link></li>
               <li><router-link class="dropdown-item" to="/products/resmed">ResMed Airfit F30i</router-link></li>
               <li><hr class="dropdown-divider"></li>
-              <li><router-link class="dropdown-item" to="/all-posts">All Product Posts</router-link></li>
+              <li><router-link class="dropdown-item" to="/all-posts">Product Archive</router-link></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -41,11 +41,13 @@
               Socials
             </a>
             <ul class="dropdown-menu">
+              <li><router-link class="dropdown-item" to="/socials">All Socials</router-link></li>
+              <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="https://www.tiktok.com/@mental_health_naps_?lang=en&is_copy_url=1&is_from_webapp=v1" target="_blank">TikTok</a></li>
               <li><a class="dropdown-item" href="https://www.instagram.com/mental_health_naps_/" target="_blank">Instagram</a></li>
               <li><a class="dropdown-item" href="https://www.youtube.com/channel/UCgjWiBrQvqILIc_E4GzLECQ" target="_blank">YouTube</a></li>
               <li><a class="dropdown-item" href="https://www.facebook.com/KajMHnaps" target="_blank">Facebook</a></li>
-              <li><router-link class="dropdown-item" to="/socials">All Socials</router-link></li>
+
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -53,9 +55,9 @@
               About
             </a>
             <ul class="dropdown-menu">
-              <li><router-link class="dropdown-item" to="/my-story">My Story</router-link></li>
-              <li><router-link class="dropdown-item" to="/about">About Me and Mental Health Naps</router-link></li>
               <li><router-link class="dropdown-item" to="/vision">The Mental Health Naps Vision</router-link></li>
+              <li><router-link class="dropdown-item" to="/about">About Mental Health Naps</router-link></li>
+              <li><router-link class="dropdown-item" to="/my-story">My Story</router-link></li>
             </ul>
           </li>
         </ul>

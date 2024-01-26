@@ -4,13 +4,14 @@
       <div class="row">
         <div class="d-flex">
           <Sidebar />
-          <div id="post" v-if="isLoaded">
-            <h1 class="h2 fw-light">{{ post.headTitle }}</h1>
-            <p class="tagline mb-3">{{post.post.readtime}}</p>
-            <img class="mb-3" :src="post.post.featuredImage" alt="">
-            <p class="tagline mb-5">{{post.post.publishedAt}}</p>
-            <div v-html="post.post.content"></div>
-            <router-link to="/">Back to Home</router-link>
+          <div>
+            <h1>Blog Posts</h1>
+            <ul v-if="isLoaded" class="list-unstyled">
+              <li v-for="post in postsList" :key="post.id"><button @click="goToPost(post.slug)"><span class="blue">{{post.title}}</span></button></li>
+            </ul>
+            <div v-else>
+              <p>loading...</p>
+            </div>
           </div>
         </div>
       </div>
@@ -21,17 +22,27 @@
 
 <script setup>
 import Sidebar from '@/components/Sidebar.vue'
-import getPost from "@/functions/getPost";
+import getPostsList from '@/functions/getPostsList'
 import {onMounted, ref} from "vue";
+import {useRouter} from "vue-router";
 
-const props = defineProps({
-  'slug': String,
-})
-
-const post = ref()
+const router = useRouter()
+const postsList = ref()
 const isLoaded = ref(false)
+
 onMounted(async () => {
-  post.value = await getPost(props.slug)
+  postsList.value = await getPostsList()
   isLoaded.value = true
 })
+
+const goToPost = (slug) => {
+  router.push({
+    name: 'Post',
+    path: '/post/' + slug,
+    params: {
+      slug: slug,
+    }
+  })
+}
+
 </script>

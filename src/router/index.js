@@ -87,6 +87,29 @@ const routes = [
     },
   },
   {
+    path: '/articles',
+    name: 'Articles',
+    component: () => import('../views/Articles'),
+    meta: {
+      title: 'About Mental Health Naps',
+      canonical: 'https://www.mentalhealthnaps.com/articles',
+      metaTags: [
+        {
+          name: 'description',
+          content: ''
+        },
+        {
+          name: 'keywords',
+          content: ''
+        },
+        {
+          name: 'robots',
+          content: 'index, follow'
+        }
+      ]
+    },
+  },
+  {
     path: '/links',
     name: 'Links',
     component: () => import('../views/Links'),
@@ -133,9 +156,9 @@ const routes = [
     },
   },
   {
-    path: '/posts/:slug',
-    name: 'Posts',
-    component: () => import('../views/Posts'),
+    path: '/post/:slug',
+    name: 'Post',
+    component: () => import('../views/Post.vue'),
     props: true,
     meta: {
       title: 'Mental Health Naps Blog Posts',
@@ -157,12 +180,35 @@ const routes = [
     },
   },
   {
-    path: '/product-articles',
-    name: 'ProductArticles',
-    component: () => import('../views/ProductArticles'),
+    path: '/posts',
+    name: 'Posts',
+    component: () => import('../views/Posts'),
     meta: {
-      title: 'All Products for Mental Health Naps',
-      canonical: 'https://www.mentalhealthnaps.com/product-articles',
+      title: 'About Mental Health Naps',
+      canonical: 'https://www.mentalhealthnaps.com/posts',
+      metaTags: [
+        {
+          name: 'description',
+          content: ''
+        },
+        {
+          name: 'keywords',
+          content: ''
+        },
+        {
+          name: 'robots',
+          content: 'index, follow'
+        }
+      ]
+    },
+  },
+  {
+    path: '/products',
+    name: 'Products',
+    component: () => import('../views/Products'),
+    meta: {
+      title: 'About Mental Health Naps',
+      canonical: 'https://www.mentalhealthnaps.com/products',
       metaTags: [
         {
           name: 'description',
