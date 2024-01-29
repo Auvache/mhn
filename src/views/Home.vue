@@ -37,9 +37,6 @@
         </div>
       </div>
     </div>
-    <div class=" d-none d-md-block row text-center medium-content mb-5">
-      <h1 class="py-5">Hello! Here we manage Mental Health and Sleep Apnea with smiles, not tears.</h1>
-    </div>
   </section>
   <section class="fade-in-up">
     <div class="container medium-content">

@@ -42,7 +42,7 @@
               <li><span class="fw-bold">Avoid Alcohol</span> - Alcohol can worsen breathing events by making them last longer and happen more often. It is recommended for people with OSA to either stop drinking or to limit drinking to earlier hours in the day.</li>
               <li><span class="fw-bold">Avoid Sedatives</span> - These can worsen breathing events that are already occurring due to OSA as it can relax muscles further, much like with drinking alcohol. Work with your doctor if you do need medications. From my experience, I’ve needed a higher pressure on CPAP while on different medications for depression and anxiety as medications relax the throats muscles further.</li>
               <li><span class="fw-bold">Avoid Sleeping On Your Back</span> - Gravity pulls everything back easier on your back than on your side or stomach.</li>
-              <li><span class="fw-bold">Exercise </span> - Exercise improves your whole body, including the muscles in your throat.  I’ve felt a huge improvement in my breathing and have been able to breathe better with my CPAP thanks to exercise.</li>
+              <li><span class="fw-bold">Exercise </span> - Exercise improves your whole body, including the muscles in your throat.  I’ve felt a huge improvement in the quality of my breathing thanks to exercise.</li>
             </ul>
 
             <h3>PAP Therapies – Positive Airway Pressure Devices</h3>
