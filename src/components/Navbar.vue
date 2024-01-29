@@ -17,7 +17,7 @@
               Articles
             </a>
             <ul class="dropdown-menu">
-              <li><router-link class="dropdown-item" to="/articles">Mental Health Naps Articles</router-link></li>
+              <li><router-link class="dropdown-item" to="/articles">Introduction Articles</router-link></li>
               <li><router-link class="dropdown-item" to="/products">Product Articles</router-link></li>
               <li><router-link class="dropdown-item" to="/posts">Weekly Blog Posts</router-link></li>
               <li><router-link class="dropdown-item" to="/all-posts">Archive</router-link></li>
@@ -33,7 +33,7 @@
               <li><router-link class="dropdown-item" to="/products/cpap-wipes">CPAP Wipes</router-link></li>
               <li><router-link class="dropdown-item" to="/products/resmed">ResMed Airfit F30i</router-link></li>
               <li><hr class="dropdown-divider"></li>
-              <li><router-link class="dropdown-item" to="/all-posts">Product Archive</router-link></li>
+              <li><router-link class="dropdown-item" to="/products">Product Archive</router-link></li>
             </ul>
           </li>
           <li class="nav-item dropdown">

@@ -1,9 +1,6 @@
 <template>
   <section class="pt-3 pt-lg-5 fade-in">
     <div class="container large-content">
-      <div class=" d-none d-md-block row text-center medium-content my-5">
-        <h1>Hello! Here we manage Mental Health and Sleep Apnea with smiles, not tears.</h1>
-      </div>
       <div class="row">
         <div class="card-box d-flex flex-row align-items-baseline justify-content-center flex-wrap">
 
@@ -39,6 +36,9 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class=" d-none d-md-block row text-center medium-content mb-5">
+      <h1 class="py-5">Hello! Here we manage Mental Health and Sleep Apnea with smiles, not tears.</h1>
     </div>
   </section>
   <section class="fade-in-up">

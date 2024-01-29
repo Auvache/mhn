@@ -5,27 +5,27 @@
         <div class="d-flex">
           <Sidebar />
           <div>
-            <h1>All Posts</h1>
-            <h2 class="tp">Products</h2>
+            <h1>The Mental Health Naps Archive</h1>
+            <h2 class="tp">Introduction to Mental Health Naps</h2>
+            <ul class="list-unstyled">
+              <li><router-link to="/my-story">My Sleep Apnea Story</router-link></li>
+              <li><router-link to="/understanding-slpeep-apnea">Understanding Sleep Apnea</router-link></li>
+              <li><router-link to="/sleep-scape">My Sleep Scape & Sleep Hygiene</router-link></li>
+              <li><router-link to="/sleep-study">All About Sleep Studies</router-link></li>
+              <li><router-link to="/vision">The Mental Health Naps Vision</router-link></li>
+              <li><router-link to="/about">About Mental Health Naps</router-link></li>
+              <li><router-link to="/socials">Follow Mental Health Naps on Social Media</router-link></li>
+            </ul>
+            <h2 class="tp">Product Articles</h2>
             <ul class="list-unstyled">
               <li><router-link to="/products/cpap-filters">CPAP Filters</router-link></li>
               <li><router-link to="/products/cpap-rainout">CPAP Rainout</router-link></li>
               <li><router-link to="/products/cpap-wipes">CPAP Wipes</router-link></li>
               <li><router-link to="/products/resmed">ResMed Airfit F30i</router-link></li>
             </ul>
-            <h2 class="tp">Articles</h2>
-            <ul class="list-unstyled">
-              <li><router-link to="/understanding-slpeep-apnea">Understanding Sleep Apnea</router-link></li>
-              <li><router-link to="/sleep-study">Sleep Study</router-link></li>
-              <li><router-link to="/sleep-scape">Sleep Scape and Sleep Hygiene</router-link></li>
-              <li><router-link to="/my-story">My Story</router-link></li>
-              <li><router-link to="/about">About Me and Mental Health Naps</router-link></li>
-              <li><router-link to="/vision">The Mental Health Naps Vision</router-link></li>
-              <li><router-link to="/socials">Social Media Accounts</router-link></li>
-            </ul>
-            <h2 class="tp">Blog Posts</h2>
+            <h2 class="tp">Weekly Blog Posts</h2>
             <ul v-if="isLoaded" class="list-unstyled">
-              <li v-for="post in postsList" :key="post.id"><button @click="goToPost(post.slug)"><span class="blue">{{post.title}}</span></button></li>
+              <li v-for="post in postsList" :key="post.id"><button @click="goToPost(post.slug)" class="text-start"><span class="blue">{{post.title}}</span></button></li>
             </ul>
             <div v-else>
               <p>loading...</p>

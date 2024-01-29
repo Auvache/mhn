@@ -5,9 +5,10 @@
         <div class="d-flex">
           <Sidebar />
           <div>
-            <h1>Blog Posts</h1>
+            <h1>Weekly Blog Posts</h1>
+            <p>Once a week, I publish a blog post musing about living with sleep apnea and mental health struggles. Use the list below to find which ones you might be interested in.</p>
             <ul v-if="isLoaded" class="list-unstyled">
-              <li v-for="post in postsList" :key="post.id"><button @click="goToPost(post.slug)"><span class="blue">{{post.title}}</span></button></li>
+              <li v-for="post in postsList" :key="post.id"><button @click="goToPost(post.slug)" class="text-start"><span class="blue">{{post.title}}</span></button></li>
             </ul>
             <div v-else>
               <p>loading...</p>

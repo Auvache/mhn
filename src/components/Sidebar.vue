@@ -2,7 +2,7 @@
   <section id="sidebar">
     <div class="sidebar-content text-center">
       <img class="sidebar-bio-pic mb-3" src="@/assets/img/about-me.png" alt="">
-      <p>My name is Kajsa Bradley and I hope that Mental Health Naps helps you on your own Sleep Apnea Journey.</p>
+      <p>My name is Kajsa Bradley. I hope that Mental Health Naps helps you on your own Sleep Apnea Journey.</p>
       <hr>
       <p>Quick Product Finds</p>
       <ul class="list-unstyled">
@@ -10,7 +10,7 @@
         <li><router-link to="/products/cpap-rainout">CPAP Rainout</router-link></li>
         <li><router-link to="/products/cpap-wipes">CPAP Wipes</router-link></li>
         <li><router-link to="/products/resmed">ResMed Airfit F30i</router-link></li>
-        <li><router-link to="/all-posts">See all articles</router-link></li>
+        <li><router-link to="/all-posts">See All Articles</router-link></li>
       </ul>
     </div>
   </section>
@@ -31,13 +31,7 @@
     top: 126px;
 
     ul li {
-      margin-bottom: 1rem;
-      line-height: 20px;
-
-      a {
-        font-size: 16px;
-        line-height: 20px;
-      }
+      margin-bottom: 0.5rem;
     }
 
     @include breakpoint(md) {

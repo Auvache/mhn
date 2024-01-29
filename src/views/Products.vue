@@ -5,7 +5,8 @@
         <div class="d-flex">
           <Sidebar />
           <div>
-            <h1>Products</h1>
+            <h1>Product Articles</h1>
+            <p>Below are articles that provide Amazon links plus information to help you find different products that help you with some sleep apnea/CPAP struggles. In addition to find what you’ve seen in my videos on social media.</p>
             <ul class="list-unstyled">
               <li><router-link to="/products/cpap-filters">CPAP Filters</router-link></li>
               <li><router-link to="/products/cpap-rainout">CPAP Rainout</router-link></li>

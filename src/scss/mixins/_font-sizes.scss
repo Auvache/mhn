@@ -78,8 +78,8 @@
     margin-bottom: 1rem;
 
     @include breakpoint(sm) {
-      font-size: 16px;
-      line-height: 26px;
+      font-size: 18px;
+      line-height: 28px;
     }
   }
 
@@ -96,13 +96,13 @@
   }
 
   @if $point == a {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: $font-weight-light;
     color: $mhn-link;
 
     @include breakpoint(sm) {
-      font-size: fluidProp(18px, 18px);
-      line-height: fluidProp(26px, 26px);
+      font-size: 18px;
+      line-height: 28px;
     }
 
     &:hover {
@@ -114,10 +114,11 @@
     font-size: 16px;
     font-weight: $font-weight-light;
     line-height: 26px;
+    margin-bottom: 0.5rem;
 
     @include breakpoint(sm) {
-      font-size: fluidProp(16px, 18px);
-      line-height: fluidProp(26px, 28px);
+      font-size: 18px;
+      line-height: 28px;
     }
   }
 }

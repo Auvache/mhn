@@ -87,7 +87,17 @@ a, .ta {
 }
 p a { @include  font-prop(p); @include font-prop(a);}
 .tagline { @include  font-prop(tagline); }
-li { @include font-prop(li); }
+li {
+  @include font-prop(li);
+  button {
+    span.blue {
+      &:hover {
+        color: $mhn-text;
+      }
+    }
+
+  }
+}
 .logo-font {
   font-size: 32px;
   font-weight: 200;
