@@ -87,7 +87,7 @@
     font-size: 14px;
     font-weight: $font-weight-light;
     line-height: 20px;
-    margin-bottom: 0.25rem;
+    margin-bottom: 1rem;
 
     @include breakpoint(sm) {
       font-size: fluidProp(14px, 14px);

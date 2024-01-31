@@ -61,7 +61,7 @@
 
             <h3>Nasal Devices</h3>
             <ul>
-              <li><span class="fw-bold">Nasal Dilator</span> - Great for those with a deviated septum or need decongestion relief. It goes inside your nose and gently pushes on the nasal airways to open them up. It’s most effective for treating those with mild to moderate sleep apnea.</li>
+              <li><span class="fw-bold">Nasal Dilator</span> - Great for those with a deviated septum or need congestion relief. It goes inside your nose and gently pushes on the nasal airways to open them up. It’s most effective for treating those with mild to moderate sleep apnea.</li>
             </ul>
 
             <h3>Pillows</h3>

@@ -13,7 +13,35 @@
             <p>As someone who has struggled with health insurance covering the costs of my mask, I find that I like to spread out the cost by purchasing the individual pieces as I go. However, keep in mind that this is my personal experience. I’ve had multiple insurance companies and plans, and they all treat sleep apnea needs in vastly different ways. </p>
             <p class="tagline"><i>*Understand that I’m speaking from an American point of view. I understand that not everywhere in the world has this issue when it comes to getting CPAP supplies. </i></p>
             <p>It’s also important to note how important it is getting the correct size. I wear a small size for both the cushion and frame. It is also possible to mix and match sizes, so you can find the right fit for your face. From all the content I’ve made about this specific mask, it has been overwhelmingly positive. </p>
-            <p>Something important to know about CPAP masks in general is that some of them have a magnetic clip on the straps. Examples of this would be the ResMed Airfit F30i or the Philips Respironics Dreamwear Full Face Mask. This is because the magnets can interfere with other medical equipment you might have, such as a pacemaker. Therefore, if you have such medical equipment - <span class="fw-bold"><i>do not use this mask</i></span>. However, if you don’t have any other medical equipment, then you are fine using this mask. With this warning label on the mask, its availability has been limited to CPAP suppliers or through your insurance. It cannot be found on Amazon at this time as it has been labeled as a recalled item for the reason stated above. </p>
+            <p>Something important to know about CPAP masks in general is that some of them have a magnetic clip on the straps. Examples of this would be the ResMed Airfit F30i or the Philips Respironics Dreamwear Full Face Mask. This is because the magnets can interfere with other medical equipment you or your partner might have, such as a pacemaker. Therefore, if you have such medical equipment- <span class="fw-bold">DO NOT USE THIS MASK</span>. However, if you or your partner don’t have any other medical equipment, then you are fine using this mask.</p>
+            <p>I shop around for the different mask parts and buy them individually as I need them to try to keep costs down. I’ve found more than once that sometimes going to someplace like Amazon can be cheaper than going through my insurance. However, that being said, make sure you go the route that makes the most sense for your wallet.  </p>
+            <p>I will do my best to make sure this list of mask parts is up to date as sometimes some pieces aren’t available. Something else to note is that you can mix and match sizes if needed. Perhaps you need a small cushion but a standard frame.</p>
+            <p>The size that I use is a small cushion with a small frame.</p>
+
+            <h2>RESMED AIRFIT F30i Mask Parts: </h2>
+            <ul class="list-unstyled">
+              <li><a href="https://amzn.to/42maGxB" target="_blank">Small Cushion</a></li>
+              <li><a href="https://amzn.to/3vO0CBl" target="_blank">CPAP Mask Liners (S)</a></li>
+              <br>
+              <li><a href="https://amzn.to/47QEmEk" target="_blank">Small Wide</a></li>
+              <li><a href="https://amzn.to/49fhE9X" target="_blank">CPAP Mask Liners (SW)</a></li>
+              <br>
+              <li><a href="https://amzn.to/47ZgyhD" target="_blank">Medium Cushion</a></li>
+              <li>CPAP Mask Liners (M) - currently unavailable</li>
+              <br>
+              <li><a href="https://amzn.to/4b9OXwW" target="_blank">Wide Cushion</a></li>
+              <li><a href="https://amzn.to/3UksgjO" target="_blank">CPAP Mask Liners (W)</a></li>
+              <br>
+              <li>Small Frame- Not available at the moment</li>
+              <li>Standard Frame -Not available at the moment</li>
+              <li>Large Frame- Not available at the moment</li>
+              <br>
+              <li>*Can be found on CPAP Product Websites. </li>
+              <br>
+              <li><a href="https://amzn.to/47Y9bXR" target="_blank">Elbow Connector</a></li>
+              <li><a href="https://amzn.to/3vOmfl1" target="_blank">Headgear (One Size Fits ALL)</a></li>
+            </ul>
+
             <h2>MASK ADJUSTMENT TIPS</h2>
             <p>A common complaint with new users of this mask is getting leaks by the nose that blows into their eyes. Here are some tips that help me use this mask while rarely getting a leak. </p>
             <ol>
