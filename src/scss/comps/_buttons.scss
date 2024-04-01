@@ -1,0 +1,13 @@
+.btn {
+  background-color: $mhn-green;
+  padding: 0.5rem 1rem;
+  color: $white;
+  transition: all 250ms;
+
+  &:hover,
+  &:focus {
+    background-color: $mhn-green;
+    color: $white;
+    opacity: 0.8;
+  }
+}

@@ -318,6 +318,30 @@ const routes = [
     },
   },
   {
+    path: '/search',
+    name: 'Search',
+    component: () => import('../views/Search'),
+    props: true,
+    meta: {
+      title: 'Search Posts on Mental Health Naps',
+      canonical: 'https://www.mentalhealthnaps.com/search',
+      metaTags: [
+        {
+          name: 'description',
+          content: ''
+        },
+        {
+          name: 'keywords',
+          content: ''
+        },
+        {
+          name: 'robots',
+          content: 'index, follow'
+        }
+      ]
+    },
+  },
+  {
     path: '/sleep-scape',
     name: 'SleepScape',
     component: () => import('../views/SleepScape'),

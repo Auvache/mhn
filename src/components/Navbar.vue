@@ -6,7 +6,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div v-if="route.path !== '/links'" class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
           <li v-if="route.path !== '/'" class="nav-item">
             <router-link class="nav-link" to="/" role="button">
               Home
@@ -60,15 +60,26 @@
               <li><router-link class="dropdown-item" to="/my-story">My Story</router-link></li>
             </ul>
           </li>
+          <li v-if="route.path !== '/search'" class="nav-item">
+            <form @submit.prevent="goToSearch">
+              <input class="search-input" type="search" placeholder="Search Posts" v-model="store.searchTerm"/>
+            </form>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
 </template>
 <script setup>
-import {useRoute} from "vue-router";
+import {useRoute, useRouter} from "vue-router";
+import {store} from "@/functions/store";
 
 const route = useRoute()
+const router = useRouter()
+
+const goToSearch = () => {
+  router.push('/search')
+}
 </script>
 <style lang="scss" scoped>
 nav {
@@ -76,6 +87,12 @@ nav {
   background-color: $mhn-green;
   width: 100%;
   top: 0;
+
+  ul {
+    li {
+      margin-bottom: 0;
+    }
+  }
 
   .navbar-brand:hover,
   .navbar-brand:focus
@@ -103,5 +120,17 @@ nav {
 }
 .navbar-logo {
   width: 60px;
+}
+
+.search-input {
+  font-weight: $font-weight-thin;
+  margin: 0.5rem;
+  padding: 0 0.5rem 0 1.5rem;
+  border: 1px solid $white;
+  border-radius: 0.25rem;
+  background: $white url("@/assets/img/search.png") no-repeat left 0.25rem center;
+  background-size: 0.9rem;
+
+  max-width: 175px;
 }
 </style>
