@@ -138,3 +138,41 @@ section {
   margin: 1rem auto;
   padding-top: 1rem;
 }
+
+//accordion dropdown
+.accordionGroup {
+  .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+  }
+
+  .accordion:hover {
+    background-color: #ccc;
+  }
+
+  .panel {
+    background-color: $white;
+    overflow: hidden;
+    height: auto;
+    max-height: 0;
+    -moz-transition: all 500ms;
+    -webkit-transition: all 500ms;
+    -o-transition: all 500ms;
+    transition: all 500ms;
+
+    & > div {
+      padding: 1rem;
+    }
+  }
+
+  .panel.show{
+    max-height: 500px;
+  }
+}

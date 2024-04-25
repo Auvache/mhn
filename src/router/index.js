@@ -318,6 +318,29 @@ const routes = [
     },
   },
   {
+    path: '/questions',
+    name: 'Questions',
+    component: () => import('../views/Questions'),
+    meta: {
+      title: 'About Mental Health Naps',
+      canonical: 'https://www.mentalhealthnaps.com/questions',
+      metaTags: [
+        {
+          name: 'description',
+          content: ''
+        },
+        {
+          name: 'keywords',
+          content: ''
+        },
+        {
+          name: 'robots',
+          content: 'index, follow'
+        }
+      ]
+    },
+  },
+  {
     path: '/search',
     name: 'Search',
     component: () => import('../views/Search'),
@@ -394,6 +417,29 @@ const routes = [
     meta: {
       title: 'About Mental Health Naps',
       canonical: 'https://www.mentalhealthnaps.com/socials',
+      metaTags: [
+        {
+          name: 'description',
+          content: ''
+        },
+        {
+          name: 'keywords',
+          content: ''
+        },
+        {
+          name: 'robots',
+          content: 'index, follow'
+        }
+      ]
+    },
+  },
+  {
+    path: '/tips',
+    name: 'Tips',
+    component: () => import('../views/Tips'),
+    meta: {
+      title: 'About Mental Health Naps',
+      canonical: 'https://www.mentalhealthnaps.com/tips',
       metaTags: [
         {
           name: 'description',
