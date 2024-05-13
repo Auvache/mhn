@@ -434,6 +434,29 @@ const routes = [
     },
   },
   {
+    path: '/subscribe',
+    name: 'Subscribe',
+    component: () => import('../views/Subscribe'),
+    meta: {
+      title: 'Subscribe to Mental Health Naps',
+      canonical: 'https://www.mentalhealthnaps.com/subscribe',
+      metaTags: [
+        {
+          name: 'description',
+          content: ''
+        },
+        {
+          name: 'keywords',
+          content: ''
+        },
+        {
+          name: 'robots',
+          content: 'index, follow'
+        }
+      ]
+    },
+  },
+  {
     path: '/tips',
     name: 'Tips',
     component: () => import('../views/Tips'),

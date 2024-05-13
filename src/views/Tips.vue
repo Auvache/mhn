@@ -1,25 +1,19 @@
 <template>
-  <section class="section-padding fade-in-up">
+  <section class="section-padding">
     <div class="container medium-content">
       <div class="row">
         <div class="d-flex">
           <Sidebar />
-          <div id="posts">
-            <div v-if="showLoading" class="text-center">
-              <div class="loader mx-auto mb-3"></div>
-              <p>Loading, please wait for just a moment :)</p>
-            </div>
-            <div v-else-if="isLoaded && posts.length > 0" class="post-container" v-for="post in posts" :key="post.id">
-              <button class="text-start" @click="goToPost(post.slug)"><span class="t5 fw-light mb-3">{{post.title}}</span></button>
-              <p class="tagline">{{post.readtime}}</p>
-              <button @click="goToPost(post.slug)"><img class="post-image" :src="post.featuredImage" alt=""></button>
-              <p class="tagline">{{post.publishedAt}}</p>
-              <p>{{post.seoDescription}}.. <button @click="goToPost(post.slug)"><span class="blue">more</span></button></p>
-            </div>
-            <div v-else>
-              <h2>Sorry</h2>
-              <p>There aren't any results for your search.</p>
-            </div>
+          <div id="tips">
+            <h1>Tips</h1>
+            <ul class="list-unstyled">
+              <li><router-link to="/products/cpap-rainout">4 Ways to Help with CPAP Rainout CPAP Hose Condensation</router-link></li>
+              <li><router-link to="/post/7 Tips to Help Get Used to Your CPAP Mask">7 Tips to Help Get Used to Your CPAP Mask</router-link></li>
+              <li><router-link to="/post/219-tips-things-i-wish-i-knew-when-i-was-diagnosed-with-sleep-apnea">Things I Wish I Knew When Diagnosed with Sleep Apnea</router-link></li>
+              <li><router-link to="/post/222-leaks-7-tips-that-help-me-battle-cpap-mask-leaks">7 Tips That Help Me Battle CPAP Mask Leaks</router-link></li>
+              <li><router-link to="/post/224-marks-12-tips-to-help-with-cpap-mask-skin-irritation-and-marks">12 Tips to Help CPAP Mask Skin Irritation and Marks</router-link></li>
+              <li><router-link to="/post/226-adjust-5-tips-to-help-adjust-to-your-cpap-mask">6 Tips to Help Adjust to Your CPAP Mask</router-link></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -29,42 +23,4 @@
 
 <script setup>
 import Sidebar from '@/components/Sidebar.vue'
-import searchPosts from '@/functions/searchPosts'
-import {store} from '@/functions/store'
-import {onMounted, ref} from "vue";
-import {useRouter} from "vue-router";
-
-onMounted(() => {
-    search()
-})
-const router = useRouter()
-const posts = ref()
-const searchText = ref('tips')
-const isLoaded = ref(false)
-const showLoading = ref(false)
-
-const search = async () => {
-  toggleLoading()
-  if (searchText.value) {
-    isLoaded.value = false
-    posts.value = await searchPosts(searchText.value)
-    isLoaded.value = true
-    store.searchTerm = ''
-  }
-  setTimeout(toggleLoading, 1000)
-}
-
-const toggleLoading = () => {
-  showLoading.value = !showLoading.value;
-}
-
-const goToPost = (slug) => {
-  router.push({
-    name: 'Post',
-    path: '/post/' + slug,
-    params: {
-      slug: slug,
-    }
-  })
-}
 </script>
