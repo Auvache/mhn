@@ -57,8 +57,14 @@
             <ul class="dropdown-menu">
               <li><router-link class="dropdown-item" to="/vision">The Mental Health Naps Vision</router-link></li>
               <li><router-link class="dropdown-item" to="/about">About Mental Health Naps</router-link></li>
-              <li><router-link class="dropdown-item" to="/my-story">My Story</router-link></li>
+              <li><router-link class="dropdown-item" to="/my-story">My Sleep Apnea Story</router-link></li>
+              <li><router-link class="dropdown-item" to="/questions">Frequently Asked Questions</router-link></li>
             </ul>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/questions" role="button">
+              FAQs
+            </router-link>
           </li>
           <li v-if="route.path !== '/search'" class="nav-item">
             <form @submit.prevent="goToSearch">
